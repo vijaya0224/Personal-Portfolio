@@ -1,0 +1,297 @@
+/* =========================
+   General Styles
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+/* =========================
+   Header and Navigation
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 2px solid #222;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #222;
+    font-size: 16px;
+}
+
+/* =========================
+   Main Content
+========================= */
+
+main {
+    border: 2px solid #222;
+}
+
+main > section {
+    padding: 25px;
+    border-bottom: 2px solid #222;
+}
+
+main > section:last-child {
+    border-bottom: none;
+}
+
+main section h1 {
+    margin-bottom: 15px;
+}
+
+main section h2 {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   Introduction
+========================= */
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #777;
+}
+
+/* =========================
+   Projects
+========================= */
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects li {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.projects li:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   Work Experience
+========================= */
+
+.work-experience article {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.work-experience article:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   Education
+========================= */
+
+.education ul {
+    padding-left: 20px;
+}
+
+/* =========================
+   Articles
+========================= */
+
+.articles article {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.articles article:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   Contact Form
+========================= */
+
+.contact form {
+    max-width: 600px;
+}
+
+.contact form div {
+    margin-bottom: 15px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #444;
+}
+
+/* =========================
+   Reviews
+========================= */
+
+.reviews {
+    padding: 25px;
+}
+
+.reviews blockquote {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-width: 180px;
+    margin: 10px 1%;
+    padding: 20px;
+    border: 2px solid #222;
+    border-radius: 25px;
+}
+
+.reviews blockquote p {
+    margin-top: 0;
+}
+
+.reviews blockquote footer {
+    color: #999;
+}
+
+/* =========================
+   Footer
+========================= */
+
+body > footer {
+    padding: 30px 10px;
+    text-align: center;
+}
+
+body > footer p {
+    margin: 0;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .intro {
+        padding: 35px 15px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    main > section {
+        padding: 18px;
+    }
+
+    .reviews blockquote {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+    }
+}
